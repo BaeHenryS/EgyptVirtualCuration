@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | My project (2)</title>
+  </head>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
+    <canvas id="unity-canvas" width=1080 height=720 style="width: 1080px; height: 720px; background: #231F20"></canvas>
+    <script src="VirtualCurationv2.loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+
+        var canvas = document.querySelector("#unity-canvas");
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        canvas.style.position = "fixed";
+
+        document.body.style.textAlign = "left";
+      }
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: ['VirtualCurationv2.data.unityweb.74', 'VirtualCurationv2.data.unityweb.80', 'VirtualCurationv2.data.unityweb.87', 'VirtualCurationv2.data.unityweb.73', 'VirtualCurationv2.data.unityweb.45', 'VirtualCurationv2.data.unityweb.89', 'VirtualCurationv2.data.unityweb.42', 'VirtualCurationv2.data.unityweb.16', 'VirtualCurationv2.data.unityweb.29', 'VirtualCurationv2.data.unityweb.11', 'VirtualCurationv2.data.unityweb.27', 'VirtualCurationv2.data.unityweb.18', 'VirtualCurationv2.data.unityweb.20', 'VirtualCurationv2.data.unityweb.88', 'VirtualCurationv2.data.unityweb.43', 'VirtualCurationv2.data.unityweb.44', 'VirtualCurationv2.data.unityweb.72', 'VirtualCurationv2.data.unityweb.86', 'VirtualCurationv2.data.unityweb.81', 'VirtualCurationv2.data.unityweb.75', 'VirtualCurationv2.data.unityweb.21', 'VirtualCurationv2.data.unityweb.26', 'VirtualCurationv2.data.unityweb.19', 'VirtualCurationv2.data.unityweb.10', 'VirtualCurationv2.data.unityweb.17', 'VirtualCurationv2.data.unityweb.28', 'VirtualCurationv2.data.unityweb.107', 'VirtualCurationv2.data.unityweb.100', 'VirtualCurationv2.data.unityweb.109', 'VirtualCurationv2.data.unityweb.131', 'VirtualCurationv2.data.unityweb.130', 'VirtualCurationv2.data.unityweb.108', 'VirtualCurationv2.data.unityweb.101', 'VirtualCurationv2.data.unityweb.106', 'VirtualCurationv2.data.unityweb.124', 'VirtualCurationv2.data.unityweb.123', 'VirtualCurationv2.data.unityweb.115', 'VirtualCurationv2.data.unityweb.112', 'VirtualCurationv2.data.unityweb.113', 'VirtualCurationv2.data.unityweb.114', 'VirtualCurationv2.data.unityweb.122', 'VirtualCurationv2.data.unityweb.125', 'VirtualCurationv2.data.unityweb.35', 'VirtualCurationv2.data.unityweb.32', 'VirtualCurationv2.data.unityweb.04', 'VirtualCurationv2.data.unityweb.03', 'VirtualCurationv2.data.unityweb.57', 'VirtualCurationv2.data.unityweb.68', 'VirtualCurationv2.data.unityweb.50', 'VirtualCurationv2.data.unityweb.66', 'VirtualCurationv2.data.unityweb.92', 'VirtualCurationv2.data.unityweb.59', 'VirtualCurationv2.data.unityweb.95', 'VirtualCurationv2.data.unityweb.61', 'VirtualCurationv2.data.unityweb.02', 'VirtualCurationv2.data.unityweb.05', 'VirtualCurationv2.data.unityweb.33', 'VirtualCurationv2.data.unityweb.34', 'VirtualCurationv2.data.unityweb.60', 'VirtualCurationv2.data.unityweb.94', 'VirtualCurationv2.data.unityweb.93', 'VirtualCurationv2.data.unityweb.67', 'VirtualCurationv2.data.unityweb.58', 'VirtualCurationv2.data.unityweb.51', 'VirtualCurationv2.data.unityweb.56', 'VirtualCurationv2.data.unityweb.69', 'VirtualCurationv2.data.unityweb.12', 'VirtualCurationv2.data.unityweb.15', 'VirtualCurationv2.data.unityweb.23', 'VirtualCurationv2.data.unityweb.24', 'VirtualCurationv2.data.unityweb.84', 'VirtualCurationv2.data.unityweb.70', 'VirtualCurationv2.data.unityweb.48', 'VirtualCurationv2.data.unityweb.77', 'VirtualCurationv2.data.unityweb.83', 'VirtualCurationv2.data.unityweb.41', 'VirtualCurationv2.data.unityweb.79', 'VirtualCurationv2.data.unityweb.46', 'VirtualCurationv2.data.unityweb.25', 'VirtualCurationv2.data.unityweb.22', 'VirtualCurationv2.data.unityweb.14', 'VirtualCurationv2.data.unityweb.13', 'VirtualCurationv2.data.unityweb.78', 'VirtualCurationv2.data.unityweb.47', 'VirtualCurationv2.data.unityweb.40', 'VirtualCurationv2.data.unityweb.49', 'VirtualCurationv2.data.unityweb.82', 'VirtualCurationv2.data.unityweb.76', 'VirtualCurationv2.data.unityweb.71', 'VirtualCurationv2.data.unityweb.85', 'VirtualCurationv2.data.unityweb.103', 'VirtualCurationv2.data.unityweb.104', 'VirtualCurationv2.data.unityweb.132', 'VirtualCurationv2.data.unityweb.135', 'VirtualCurationv2.data.unityweb.134', 'VirtualCurationv2.data.unityweb.133', 'VirtualCurationv2.data.unityweb.105', 'VirtualCurationv2.data.unityweb.102', 'VirtualCurationv2.data.unityweb.120', 'VirtualCurationv2.data.unityweb.127', 'VirtualCurationv2.data.unityweb.118', 'VirtualCurationv2.data.unityweb.111', 'VirtualCurationv2.data.unityweb.116', 'VirtualCurationv2.data.unityweb.129', 'VirtualCurationv2.data.unityweb.117', 'VirtualCurationv2.data.unityweb.128', 'VirtualCurationv2.data.unityweb.110', 'VirtualCurationv2.data.unityweb.126', 'VirtualCurationv2.data.unityweb.119', 'VirtualCurationv2.data.unityweb.121', 'VirtualCurationv2.data.unityweb.53', 'VirtualCurationv2.data.unityweb.98', 'VirtualCurationv2.data.unityweb.54', 'VirtualCurationv2.data.unityweb.96', 'VirtualCurationv2.data.unityweb.62', 'VirtualCurationv2.data.unityweb.65', 'VirtualCurationv2.data.unityweb.91', 'VirtualCurationv2.data.unityweb.31', 'VirtualCurationv2.data.unityweb.09', 'VirtualCurationv2.data.unityweb.36', 'VirtualCurationv2.data.unityweb.00', 'VirtualCurationv2.data.unityweb.38', 'VirtualCurationv2.data.unityweb.07', 'VirtualCurationv2.data.unityweb.90', 'VirtualCurationv2.data.unityweb.64', 'VirtualCurationv2.data.unityweb.63', 'VirtualCurationv2.data.unityweb.97', 'VirtualCurationv2.data.unityweb.55', 'VirtualCurationv2.data.unityweb.52', 'VirtualCurationv2.data.unityweb.99', 'VirtualCurationv2.data.unityweb.39', 'VirtualCurationv2.data.unityweb.06', 'VirtualCurationv2.data.unityweb.01', 'VirtualCurationv2.data.unityweb.08', 'VirtualCurationv2.data.unityweb.37', 'VirtualCurationv2.data.unityweb.30'],
+        frameworkUrl: "VirtualCurationv2.framework.js.unityweb",
+        codeUrl: ['VirtualCurationv2.wasm.unityweb.00', 'VirtualCurationv2.wasm.unityweb.01'],
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "My project (2)",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
